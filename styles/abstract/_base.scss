@@ -1,0 +1,19 @@
+@import './variables';
+
+*, *::before, *::after {
+   box-sizing: border-box;
+   font-size: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: $bg-heading-button-color;
+   color: $paragraph-color;
+   display: grid;
+   font-family: $regular-font-family;
+   font-size: $regular-font-size;
+   font-weight: $font-regular;
+   min-height: 100vh;
+   place-content: center;
+}

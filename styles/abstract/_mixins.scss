@@ -1,0 +1,10 @@
+@import '../abstract/variables';
+
+@mixin link-active-state-color {
+   @media screen and (min-width: 90rem) {
+
+      &:hover {
+         color: $bg-heading-button-color;
+      }
+   }
+}

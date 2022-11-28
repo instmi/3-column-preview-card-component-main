@@ -1,0 +1,91 @@
+@import '../abstract/variables';
+@import '../abstract/mixins';
+
+.card {
+   margin: 5rem auto;
+   width: 86vw;
+
+   @media screen and (min-width: 90rem) {
+      display: grid;
+      height: 28.75rem;
+      grid-template-columns: repeat(3, 1fr);
+      width: 64vw;
+   }
+
+   div {
+      padding: 3rem;
+
+      h1 {
+         color: $bg-heading-button-color;
+         font-family: $heading-font-family;
+         font-size: $heading-font-size;
+         font-weight: $font-bold;
+         margin: 2rem 0;
+         letter-spacing: 0.0625rem;
+         text-transform: uppercase;
+      }
+
+      p {
+         line-height: 1.5rem;
+      }
+
+      a {
+         background-color: $bg-heading-button-color;
+         border: 0.125rem solid $bg-heading-button-color;
+         border-radius: 1.8rem;
+         display: inline-block;
+         margin-top: 2rem;
+         padding: 0.625rem 1.875rem;
+         text-decoration: none;
+
+         @media screen and (min-width: 90rem) {
+            margin-top: 5rem;
+            padding: 0.875rem 1.875rem;
+
+            &:hover {
+               background-color: transparent;
+            }
+         }
+      }
+
+      &:first-child {
+         background-color: $first-card-bg-color;
+         border-radius: 0.5rem 0.5rem 0 0;
+
+         @media screen and (min-width: 90rem) {
+            border-radius: 0.5rem 0 0 0.5rem;
+         }
+
+         a {
+            color: $first-card-bg-color;
+
+            @include link-active-state-color
+         }
+      }
+   
+      &:nth-child(2) {
+         background-color: $second-card-bg-color;
+
+         a {
+            color: $second-card-bg-color;
+
+            @include link-active-state-color
+         }
+      }
+   
+      &:nth-child(3) {
+         background-color: $last-card-bg-color;
+         border-radius: 0px 0px 0.5rem 0.5rem;
+
+         @media screen and (min-width: 90rem) {
+            border-radius: 0px 0.5rem 0.5rem 0;
+         }
+
+         a {
+            color: $last-card-bg-color;
+
+            @include link-active-state-color
+         }
+      }
+   }
+}

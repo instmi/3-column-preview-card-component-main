@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 95%);
+  color: hsla(0deg, 0%, 100%, 0.75);
+  display: grid;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  min-height: 100vh;
+  place-content: center;
+}
+
+.card {
+  margin: 5rem auto;
+  width: 86vw;
+}
+@media screen and (min-width: 90rem) {
+  .card {
+    display: grid;
+    height: 28.75rem;
+    grid-template-columns: repeat(3, 1fr);
+    width: 64vw;
+  }
+}
+.card div {
+  padding: 3rem;
+}
+.card div h1 {
+  color: hsl(0deg, 0%, 95%);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2.375rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+.card div p {
+  line-height: 1.5rem;
+}
+.card div a {
+  background-color: hsl(0deg, 0%, 95%);
+  border: 0.125rem solid hsl(0deg, 0%, 95%);
+  border-radius: 1.8rem;
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.625rem 1.875rem;
+  text-decoration: none;
+}
+@media screen and (min-width: 90rem) {
+  .card div a {
+    margin-top: 5rem;
+    padding: 0.875rem 1.875rem;
+  }
+  .card div a:hover {
+    background-color: transparent;
+  }
+}
+.card div:first-child {
+  background-color: hsl(31deg, 77%, 52%);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+@media screen and (min-width: 90rem) {
+  .card div:first-child {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+}
+.card div:first-child a {
+  color: hsl(31deg, 77%, 52%);
+}
+@media screen and (min-width: 90rem) {
+  .card div:first-child a:hover {
+    color: hsl(0deg, 0%, 95%);
+  }
+}
+.card div:nth-child(2) {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.card div:nth-child(2) a {
+  color: hsl(184deg, 100%, 22%);
+}
+@media screen and (min-width: 90rem) {
+  .card div:nth-child(2) a:hover {
+    color: hsl(0deg, 0%, 95%);
+  }
+}
+.card div:nth-child(3) {
+  background-color: hsl(179deg, 100%, 13%);
+  border-radius: 0px 0px 0.5rem 0.5rem;
+}
+@media screen and (min-width: 90rem) {
+  .card div:nth-child(3) {
+    border-radius: 0px 0.5rem 0.5rem 0;
+  }
+}
+.card div:nth-child(3) a {
+  color: hsl(179deg, 100%, 13%);
+}
+@media screen and (min-width: 90rem) {
+  .card div:nth-child(3) a:hover {
+    color: hsl(0deg, 0%, 95%);
+  }
+}/*# sourceMappingURL=style.css.map */
